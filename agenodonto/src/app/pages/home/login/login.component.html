@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="conteudo-esquerda">
+        <div class="logo-tipo">
+            <img src="../../../assets/LogoControlagua.png" alt="Logotipo">
+        </div>
+    </div>
+    <div class="conteudo-direita">
+        <div class="titulo">Login
+            <div class="legenda">
+                Por favor, preencha os dados abaixo para acessar
+            </div>
+        </div>
+
+        <form class="formulario" [formGroup]="loginForm" (submit) = "login()">
+
+                <div class="input-field">
+                    <input type="text" name="username" id="username" formControlName="email"
+                        placeholder="Digite seu email" required>
+                    <div class="underline"></div>
+                </div>
+
+
+                <div class="input-field">
+                    <input type="password" name="password" id="password" formControlName="Senha"
+                        placeholder="Digite sua senha" required>
+                    <div class="underline"></div>
+                </div>
+
+
+                <input type="submit" value="Continue">
+
+
+                <div class="esqueceu-senha">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+
+
+                <div class="novo-usuario">
+                    <a href="#">Não possuo cadastro</a>
+                </div>
+
+        </form>
+
+    </div>
+</div>
