@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&family=Roboto:wght@100;700&family=Rum+Raisin&display=swap');
 * {
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
-
+body {
+    width: 100%;
+    height: 100%;
+}
 .main {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,33 +22,51 @@
 }
 .conteudo-esquerda {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+    font-family: 'Rum Raisin', "Roboto", sans-serif;
 }
+
+
 .logo-tipo {
     width: 100px;
-    height: 50px;
+    height: 84px;
     display: flex;
     justify-content: center;
 }
 
+.nome-sistema {
+    display: flex;
+    font-weight: 400;
+    font-size: 64px;
+    padding: 12px;
+}
+.descricao {
+    display: flex;
+    font-family: 'Roboto Slab',"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;    
+}
 .conteudo-direita {
     width: 50%;
-    height: 100vh;    
+    height: 100%;    
     background: linear-gradient(90deg, #56EEE5 48.97%, #56EEE5 54.69%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
-.conteudo-direita .titulo {
-    font-size: 24px;
+.conteudo-direita .mensagem {
+    font-size: 64px;
     font-weight: 700;
+    font-family: 'Rum Raisin', "Roboto", sans-serif;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -62,7 +82,7 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 70%;
     margin-top: 75px;
 }
 
@@ -106,6 +126,8 @@ form .input-field:first-child {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.7);
     width: 100%;
+    height: 32px;
+    border-radius: 4px;
 }
 
 .input-field input::placeholder {
@@ -119,8 +141,8 @@ form input[type="submit"] {
     background: linear-gradient(to left, #FFF, rgb(204, 191, 191));
     cursor: pointer;
     color: rgb(0, 0, 0);
-    font-size: 0.9rem;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
@@ -128,12 +150,28 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #4776E6, #8e54e9);
+    color: #FFF;
 }
-
+form .esqueceu-senha a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;    
+}
+form .esqueceu-senha a:hover{
+    color: #4776E6;    
+}    
 form .esqueceu-senha {
-    margin-top: 24px;
+    margin-top: 32px;
 }
-
+form .novo-usuario a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;    
+}
+form .novo-usuario a:hover{
+    color: #4776E6;    
+}
 form .novo-usuario {
-    margin-top: 24px;
+    margin-top: 32px;
+    display: flex;
 }

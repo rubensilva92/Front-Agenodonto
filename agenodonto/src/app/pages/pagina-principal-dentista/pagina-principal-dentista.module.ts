@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
+import { PaginaPrincipalDentistaComponent } from './pagina-principal-dentista.component';
+import { PaginaPrincipalDentistaRoutingModule } from './pagina-principal-dentista-routing.module';
+import { DadosPerfilDentistaModule } from 'src/app/components/dados-perfil-dentista/dados-perfil-dentista.module';
+import { NavbarModule } from 'src/app/components/navbar/navbar.module';
 
 @NgModule({
-  declarations: [],
+  declarations: [PaginaPrincipalDentistaComponent],
   imports: [
-    CommonModule
+    PaginaPrincipalDentistaRoutingModule,
+    DadosPerfilDentistaModule,
+    NavbarModule,
+  ],
+  providers: [
   ]
 })
 export class PaginaPrincipalDentistaModule { }

@@ -39,26 +39,28 @@ export class LoginComponent implements OnInit {
     this.authService.UsuarioAutenticado(true);
     
     this.loginService.Login(dados).subscribe(
-      (response: Array<UsuarioLogado>) => {
+      (response: UsuarioLogado) => {
         this.usuarioInvalido = false;
         this.loginService.usuarioLogado = response;
-        this.usuarioLogadoService.SetEmailUsuarioLogado(this.loginService.usuarioLogado[0].email);
-        if (!response.length) {
+        console.log(this.loginService.usuarioLogado.email);
+        this.usuarioLogadoService.SetEmailUsuarioLogado(this.loginService.usuarioLogado.email);
+
+        if (!response) {
           this.usuarioInvalido = true;
         }
       },
       (error) => console.error(error),
       () => {
-        if (this.loginService.usuarioLogado.length) {
+        if (this.loginService.usuarioLogado) {
           this.authService.UsuarioAutenticado(true);
-          this.idTipoUsuario = this.loginService.usuarioLogado[0].idTipoUsuario;
-          /*
+          this.idTipoUsuario = this.loginService.usuarioLogado.idTipoUsuario;
+          console.log(this.idTipoUsuario);
           if(this.idTipoUsuario == 1) {
             this.router.navigate(['pagina-principal-dentista']);
           }
           else {
             this.router.navigate(['pagina-principal-paciente']);
-          }*/
+          }
           
         }
       }

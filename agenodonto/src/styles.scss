@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 /* Largura */
+
+
+
 body {
     margin: 0;
     border: 0;
@@ -33,5 +36,5 @@ body {
     width: 10px;
     height: 8px;
   }
-html, body { height: 100%; }
+html, body { height: 100%; width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pagina-principal-dentista.component.html',
   styleUrls: ['./pagina-principal-dentista.component.scss']
 })
+
+
+
 export class PaginaPrincipalDentistaComponent implements OnInit {
 
-  constructor() { }
+ constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

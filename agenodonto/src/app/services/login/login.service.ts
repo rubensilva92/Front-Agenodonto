@@ -7,14 +7,15 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class LoginService {
-  public usuarioLogado = new Array<UsuarioLogado>();
+  public usuarioLogado = new UsuarioLogado();
 
   constructor(public httpClient: HttpClient) { }
 
   private readonly baseUrl = environment["endPoint"];
 
   Login(login: Login) {
-    return this.httpClient.post<Array<UsuarioLogado>>(
+    debugger
+    return this.httpClient.post<UsuarioLogado>(
       `${this.baseUrl}/Usuario/login`,login
     );
   }

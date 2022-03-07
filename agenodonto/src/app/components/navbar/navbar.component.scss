@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&family=Roboto:wght@100;700&family=Rum+Raisin&display=swap');
+
+.principal {
+    display: flex;
+    width: 100%;
+    background-color: #eff4f5;
+    margin-bottom: 1px;
+}
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 4px;
+}
+.titulo img {
+    width: 48px;
+    height: 48px;
+}
+.texto-titulo {
+    font-weight: 600;
+    font-size: 32px;
+    font-family: 'Rum Raisin', "Roboto", sans-serif;
+}
+.menuUsuario {
+    display: flex;
+}
+
+.menuUsuario img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+.opcoesUser {
+    width: 100%;
+    height: 100%;
+}

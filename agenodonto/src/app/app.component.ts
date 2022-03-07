@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+import { CalendarOptions } from '@fullcalendar/angular';
+
+import dayGridPlugin from '@fullcalendar/daygrid';
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +13,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'agenodonto';
+
+  //   calendarOptions : CalendarOptions = {
+  //   initialView: 'dayGridMonth'
+  // };
+  
+
 }
