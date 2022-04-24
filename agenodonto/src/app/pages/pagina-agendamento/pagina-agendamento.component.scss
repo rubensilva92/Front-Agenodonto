@@ -1,0 +1,66 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.9);
+}
+
+.dados-dentista {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0 12px 12px;
+}
+.texto-explicativo {
+    padding-left: 12px;
+    font-weight: 700;
+    font-style: italic;
+    color: blue;
+}
+.agendar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.calendario {
+    padding-left: 12px;
+}
+.quadro-horarios {
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data-selecionada {
+    font-weight: 700;
+}
+.combos {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding-top: 12px;
+}
+.combos .inicio {
+    padding-right: 8px;
+}
+.combos .fim {
+    padding: 0 8px 0 8px;
+}
+select {
+    width: 90px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.botao-confirmar {
+    padding-top: 20px;
+}
+.botao-confirmar button {
+    width: 180px;
+    height: 40px;
+    font-weight: 800;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}

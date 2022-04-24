@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { DadosPerfilPacienteModule } from 'src/app/components/dados-perfil-paciente/dados-perfil-paciente.module';
+import { PaginaPrincipalPacienteRoutingModule } from './pagina-principal-paciente-routing.module';
+import { PaginaPrincipalPacienteComponent } from './pagina-principal-paciente.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [PaginaPrincipalPacienteComponent],
   imports: [
-    CommonModule
+    DadosPerfilPacienteModule,
+    PaginaPrincipalPacienteRoutingModule,
   ]
 })
 export class PaginaPrincipalPacienteModule { }

@@ -24,6 +24,12 @@ const routes: Routes = [
     loadChildren: () =>
     import('./pages/pagina-principal-paciente/pagina-principal-paciente.module').then((m) => m.PaginaPrincipalPacienteModule),
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'pagina-agendamento',
+    loadChildren: () =>
+    import('./pages/pagina-agendamento/pagina-agendamento.module').then((m) => m.PaginaAgendamentoModule),
+    canActivate: [AuthGuard],
   }
 ];
 

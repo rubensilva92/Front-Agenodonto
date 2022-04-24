@@ -1,0 +1,31 @@
+.tabela-resultado-busca table {
+    border: 1px solid;
+    border-color: black;
+}
+.tabela-resultado-busca tr {
+    cursor: pointer;;
+}
+.tabela-resultado-busca td {
+    font-weight: 500;
+}
+.tabela-resultado-busca #dentista {
+    width: 160px;
+}
+.tabela-resultado-busca #endereco {
+    width: 350px;
+}
+.tabela-resultado-busca #cep {
+    width: 100px;
+}
+.tabela-resultado-busca #complemento {
+    width: 140px;
+}
+.tabela-resultado-busca #bairro {
+    width: 250px;
+}
+.tabela-resultado-busca #cidade {
+    width: 220px;
+}
+.tabela-resultado-busca #estado {
+    width: 150px;
+}

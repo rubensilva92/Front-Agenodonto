@@ -1,0 +1,68 @@
+.calendario {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0;
+    width: 100%;
+    height: 92%;
+    margin-bottom: 4px;
+}
+#calConsultas {
+    display: flex;
+    width: 72vw;
+    height: 54vh;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.legendas-agendamentos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.maisde50 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.maisde50 .icone {
+    width: 20px;
+    height: 20px;
+    background-color: #00ff00;
+    margin-right: 4px;
+}
+
+.menosde50 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menosde50 .icone {
+    width: 20px;
+    height: 20px;
+    background-color: #ffff00;
+    margin-right: 4px;
+}
+
+.semhorario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.semhorario .icone {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    margin-right: 4px;
+}
